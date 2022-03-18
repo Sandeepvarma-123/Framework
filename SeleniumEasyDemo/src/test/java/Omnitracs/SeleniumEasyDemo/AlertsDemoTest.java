@@ -115,7 +115,7 @@ public class AlertsDemoTest {
 		Thread.sleep(1000);
 		driver.switchTo().alert().accept();	
 		
-		//code to validate Promptbox alert
+		//code to validate Promptbox alertAlertbox
 		try {
 			Assert.assertTrue(jsa.PromptBoxMessage().getText().contains("You have entered 'Hello Ram' !"));
 		} catch (AssertionError e) {
